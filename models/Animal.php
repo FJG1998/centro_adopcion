@@ -29,7 +29,7 @@ class animal{
     public $color;
     public $tamanyo;
     public $edad = 'N/A';
-    public $danyos = 'Ningún daño sufrido';
+    public $danyos = 'Ningún daño sufrido. ';
     public $actitud = 'Normal';
     public $alimentacion = 'Pienso';
     public $nombre;
@@ -56,25 +56,38 @@ class animal{
 
         public function imprimirFoto(){
 
-         echo('<img class="foto" src="' . $this-> foto .'">');
+         echo('<img class="animalFoto" src="' . $this-> foto .'">');
 
         }
 
 
-    //  imprimir datos
+    //  imprimir datos ordenados en pantalla
 
      public function imprimirDatos(){
 
-        foreach($this as $key => $valor){
-            
-            if($valor != "" && $key != 'foto'){
-            
-            echo($key.':'. ' ' . $valor);
-            
-            echo('<br>');
-            }
-        }
+
+        echo('<ul>');
+
+        echo('<li>ID:' .' '. '<span>'.  $this-> id .'</span></li>');
+
+        echo('<li>Nombre:' .' '. '<span>'.  $this-> nombre .'</span></li>');
+
+        echo('<li>Raza:' .' '. '<span>' . $this-> raza .'</span></li>');
+
+        echo('<li>Color:' .' '. '<span>'.  $this-> color .'</span></li>');
+        
+        echo('<li>Edad:' .' '. '<span>' . $this-> edad .'</span></li>');
+
+        echo('<li>Actitud:' .' '. '<span>' . $this-> actitud .'</span></li>');
+
+        echo('<li>Sexo:' .' '. '<span>' . $this-> sexo .'</span></li>');
+
+        echo('</ul><br>');
+
+        echo('<a href="http://localhost/trabajo/clase/centro_adopcion/formulario.php?nombre=' . $this->nombre .'">LO ADOPTO!</a>');
+        
     }
+    
 
 }
 

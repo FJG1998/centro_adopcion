@@ -1,0 +1,32 @@
+html{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+img{
+
+    width: 20vw;
+    border-radius: 3vw;
+}
+
+form{
+    padding: 5rem;
+    background-color: rgb(73, 62, 62);
+    border-radius: 2rem;
+    color: white;
+}
+h3{
+
+    font: size 80px;
+    color: white;
+}
+.contenedor{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo.jpg);
+ 
+}
+

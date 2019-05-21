@@ -27,6 +27,7 @@ $animales=[
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Adopta Tu Mascota</title>
@@ -37,40 +38,35 @@ $animales=[
 
 <header>
 
-<h1>Adopta a tu nuevo perro</h1>
-
-<h2>Ellos tambien tienen derecho a ser felices:</h2>
+<h1 class="titulo">Ellos tambien tienen derecho a ser felices</h1>
 
 </header>
-
 
 <?php
 
 foreach($animales as $valor){
 
-    echo('<section class="contenedor">');
+    echo('<section class="animal">');
 
-    echo('<article class="fotoAnimal">');
+        echo('<article class="fotoAnimal">');
 
-         $valor-> imprimirFoto();
-    
-    echo('</article>');
+            $valor-> imprimirFoto();
+        
+        echo('</article>');
 
-    echo('<article class="infoAnimales">');
+        echo('<article class="animalDatos">');
 
-        $valor-> imprimirDatos();
+            $valor-> imprimirDatos();
 
-        echo('<a href="">LO ADOPTO!</a>');
+            echo('<br>');
 
-    echo('</article>');
+            
 
+        echo('</article>');
 
-
-
-
+    echo('</section>');
 }
 
 ?>
-</section>
 </body>
 </html>

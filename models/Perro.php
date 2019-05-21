@@ -46,7 +46,7 @@ $fluffy = new Perro(78,'Fluffy.','img/fluffy.jpg','De otra galaxia.','Marrón os
 
 $jack = new Perro(100,'Jack.','img/jack.jpg','Husky.','Blanco y negro.','5 años APROX.','Simplemente adorable!.','Macho','NO.');
 
-$joker = new Perro(110,'Joker','img/joker.jpg','Fleetary Irlandés.','Marrón Oscuro.','4 años Aprox.','Te dara compañía y todo su cariño.','Macho.','NO.');
+$joker = new Perro(110,'Joker.','img/joker.jpg','Fleetary Irlandés.','Marrón Oscuro.','4 años Aprox.','Te dara compañía y todo su cariño.','Macho.','NO.');
 
 $ruffy = new Perro(120,'Ruffy.','img/ruffy.jpg','Pastor Alemán.','Marron y negro.','7 años APROX.','Sin duda el mas leal de todos.','Macho','NO');
 

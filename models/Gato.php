@@ -32,7 +32,7 @@ class Gato extends Animal{
         $this-> pedigree = $pedigree;
     }
 }
-$miaumiau = new Gato( 056,'Miau-Miau','img/miaumiau.jpg','Extraterrestre','Blanco/Grisaceo','3 años APROX','Dócil pero mui a su rollo','Hembra','SI');
+$miaumiau = new Gato( 056,'Miau-Miau.','img/Miau-Miau.jpg','Extraterrestre','Blanco/Grisaceo','3 años APROX','Dócil pero mui a su rollo','Hembra','SI');
 
       // Comprovacion del Objeto
 
